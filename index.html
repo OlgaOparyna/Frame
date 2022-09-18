@@ -11,14 +11,16 @@
 
 <body>
    <header class="header">
-      <div class="header-wrapper">
-         <nav class="header__nav">
-            <a class="nav__link" href="#">Home</a>
-            <a class="nav__link" href="#About me">About me</a>
-            <a class="nav__link" href="#Skills">Skills</a>
-            <a class="nav__link" href="#Portfolio">Portfolio</a>
-            <a class="nav__link" href="#Contacts">Contacts</a>
-         </nav>
+      <div class="container">
+         <div class="header-wrapper">
+            <nav class="header__nav">
+               <a class="nav__link" href="#home">Home</a>
+               <a class="nav__link" href="#About me">About me</a>
+               <a class="nav__link" href="#Skills">Skills</a>
+               <a class="nav__link" href="#Portfolio">Portfolio</a>
+               <a class="nav__link" href="#Contacts">Contacts</a>
+            </nav>
+         </div>
       </div>
    </header>
    <main>
@@ -26,9 +28,13 @@
          <div class="container">
             <div class="profile__wrapper">
                <div class="profile__description">
-                  <h1 class="headline">Olga<br>Oparina</h1>
+                  <h1 class="headline"><a name="home"></a>Olga<br>Oparina</h1>
                   <p class="text">frontend developer<br> 33 years old, Minsk</p>
-                  <button class="btn-profile"> ru eng </button>
+                  <button class="btn-profile">
+                     <a>ru</a>
+                     <a class="vl"></a>
+                     <a>eng</a>
+                  </button>
                </div>
                <div class="profile__foto">
                   <img src="./images/photo olya.jpg">
@@ -57,10 +63,22 @@
                   <h2 class="headline"><a name="Skills"></a>Skills</h2>
                   <p class="text"> I work in such programs as</p>
                   <div class="image">
-                     <img src="./images/Vector 1ps.jpg">
-                     <img src="./images/Vector 2ai.jpg">
-                     <img src="./images/Vector 3ae.jpg">
-                     <img src="./images/path3 fill 1 blue.svg">
+                     <img class="img" src="./images/Vector 1ps.jpg">
+                     <img class="img" src="./images/Vector 2ai.jpg">
+                     <img class="img" src="./images/Vector 3ae.jpg">
+                     <div class="figma">
+                        <img src="./images/path1 fill 1 red.svg">
+                        <img src="./images/path2 fill 2 pink.svg">
+                        <img src="./images/path1 fill 3 purpul.svg">
+                        <img src="./images/path3 fill 4 blue.svg">
+                        <img src="./images/path0 fill 5 green.svg">
+                     </div>
+                  </div>
+                  <div class="programs">
+                     <p class="program">Adobe<br>Photoshop</p>
+                     <p class="program">Adobe<br>Illustrator</p>
+                     <p class="program">Adobe<br>After Effects</p>
+                     <p class="program">Figma</p>
                   </div>
                </div>
             </div>
@@ -95,11 +113,18 @@
                <div class="description">
                   <h2 class="headline"><a name="Contacts"></a>Contacts</h2>
                   <p class="text">Want to know more or just chat?<br>You are welcome!</p>
-                  <div class="buttom">
+                  <div class="button">
                      <button>Send message</button>
                   </div>
-                  <div></div>
-                  <p class="text">Like me on LinkedIn, Instagram, Telegram</p>
+                  <div class="link">
+                     <a class="link" href="https://ru.linkedin.com/" target="_blank"><img
+                           src="./images/linkedin.jpg"></a>
+                     <a class="link" href="https://www.instagram.com/" target="_blank"><img
+                           src="./images/Insta.jpg"></a>
+                     <a class="link" href="https://web.telegram.org/" target="_blank"><img
+                           src="./images/telegram.jpg"></a>
+                  </div>
+                  <p class="text">Like me on<br>LinkedIn, Instagram, Telegram</p>
                </div>
             </div>
          </div>

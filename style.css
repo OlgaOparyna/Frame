@@ -15,16 +15,14 @@ body {
 .container {
    max-width: 1250px;
    margin: 0 auto;
-   padding: 0 250px;
 }
 .header {
-   max-width: 1250px;
    background-color: #ffffff;
+   max-width: 1250px;
    margin: 0 auto;
-   padding: 0 250px;
-   border-bottom: solid 1px #828282;
+   border-bottom: 1px solid #828282;
    }
-.header-wrapper {
+.header__nav {
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -35,15 +33,14 @@ body {
    font-size: 18px;
    line-height: 22px;
    text-decoration: none;
-}
-.header__nav:first-child {
+   }
+.nav__link:hover {
    color: #070707;
 }
 .profile__wrapper{
    height: auto;
    background: #ffffff;
-   padding: 120px 0;  
-}
+   }
 .profile__description{
    color: #070707;
    display: flex;
@@ -54,6 +51,16 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+}
+.btn-profile{
+   font-size: 16px;
+   color: #828282;
+   text-transform: uppercase;
+   transform: rotate(-90deg);
+}
+.vl {
+   border-left: 1px solid #070707;
+   padding: 0 2px;
 }
 .aboutme__wrapper {
    height: auto;
@@ -83,6 +90,33 @@ body {
    background: #ffffff;
    padding: 120px 0;
 }
+.image{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   padding: 20px 0;
+   }
+.img{
+   padding: 60px 80px 20px;
+}
+.figma{
+   display: flex;
+   flex-wrap: wrap;
+   width: 60px;
+   height: 90px;
+   padding: 80px 80px 20px;
+}
+.programs{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+.program{
+   font-size: 14px;
+   text-align: center;
+   color: #828282;
+   padding: 0px 92px;
+}
 .portfolio___wrapper{
    height: auto;
    background: #F6F6F6; 
@@ -92,4 +126,17 @@ body {
    height: auto;
    background:  #ffffff; 
    padding: 120px 0;
+}
+.button{
+   color: #FFFFFF;
+   background: #070707;
+   padding: 10px;
+   border-radius: 20px;
+}
+.link{
+   display: flex;
+   justify-content: center;
+   padding: 30px;
+   width: 40px;
+   height: 40px;
 }
