@@ -28,17 +28,17 @@
          <div class="container">
             <div class="profile__wrapper">
                <div class="profile__description">
-                  <h1 class="name"><a name="home"></a>Olga<br>Oparina</h1>
+                  <h1 class="name" id="home">Olga<br>Oparina</h1>
                   <p class="text">frontend developer<br> 33 years old, Minsk</p>
                   <button class="btn-profile">
-                     <a>ru</a>
+                     <a class="btn" href="#">ru</a>
                      <a class="vl"></a>
-                     <a><span class="eng">eng</span></a>
+                     <a class="btn" href="#"><span class="eng">eng</span></a>
                   </button>
                </div>
-               <div class="profile__foto">
-                  <img src="./images/photo olya.jpg">
-               </div>
+               <picture class="profile__foto">
+                  <img src="./images/photo olya.jpg" width="100%" alt="my foto">
+               </picture>
             </div>
          </div>
       </section>
@@ -46,11 +46,15 @@
          <div class="container">
             <div class="aboutme__wrapper">
                <div class="description">
-                  <h2 class="headline"><a name="About me"></a>About me</h2>
-                  <p class="text"> Hi, I'm Olga – frontend developer from Minsk.<br>
-                     I'm interested in development and everything connected with it.<br><br>
-                     I'm studying at courses "Front End developer"<br>in programming school TeachMeSkills.
-                     <br><br>Ready to implement excellent projects<br>with wonderful people.
+                  <h2 class="headline" id="About me">About me</h2>
+                  <p class="text"> Hi, I'm Olga – frontend developer from Minsk.</p>
+                  <p class="text">I'm interested in development and everything connected with it.</p>
+                  <p></p>
+                  <p class="text">I'm studying at courses "Front End developer"</p>
+                  <p class="text">in programming school TeachMeSkills.</p>
+                  <p></p>
+                  <p class="text">Ready to implement excellent projects</p>
+                  <p class="text">with wonderful people.
                   </p>
                </div>
             </div>
@@ -60,11 +64,11 @@
          <div class="container">
             <div class="skills__wrapper">
                <div class="description">
-                  <h2 class="headline"><a name="Skills"></a>Skills</h2>
+                  <h2 class="headline" id="Skills">Skills</h2>
                   <p class="text"> I work in such programs as</p>
                   <div class="image">
                      <div class="block">
-                        <img class="img" src="./images/Vector 1ps.jpg">
+                        <img class="img" src="./images/1ps.jpg">
                         <p class="program">Adobe<br>Photoshop</p>
                         <div class="rating-result">
                            <span class="active"></span>
@@ -75,7 +79,7 @@
                         </div>
                      </div>
                      <div class="block">
-                        <img class="img" src="./images/Vector 2ai.jpg">
+                        <img class="img" src="./images/2ai.jpg">
                         <p class="program">Adobe<br>Illustrator</p>
                         <div class="rating-result">
                            <span class="active"></span>
@@ -85,7 +89,7 @@
                            <span></span>
                         </div>
                      </div>
-                     <div class="block"> <img class="img" src="./images/Vector 3ae.jpg">
+                     <div class="block"> <img class="img" src="./images/3ae.jpg">
                         <p class="program">Adobe<br>After Effects</p>
                         <div class="rating-result">
                            <span class="active"></span>
@@ -97,12 +101,14 @@
                      </div>
                      <div class="block">
                         <div class="figma">
-                           <img src="./images/path1 fill 1 red.svg">
+                           <img src="./images/path1 fill 1 red.svg" src="./images/Vector 1back.jpg">
                            <img src="./images/path2 fill 2 pink.svg">
                            <img src="./images/path1 fill 3 purpul.svg">
                            <img src="./images/path3 fill 4 blue.svg">
                            <img src="./images/path0 fill 5 green.svg">
                            <p class="program">Figma<br><br></p>
+                        </div>
+                        <div>
                            <div class="rating-result">
                               <span class="active"></span>
                               <span class="active"></span>
@@ -121,17 +127,17 @@
          <div class="container">
             <div class="portfolio__wrapper">
                <div class="description">
-                  <h2 class="headline"><a name="Portfolio"></a>Portfolio</h2>
+                  <h2 class="headline" id="Portfolio">Portfolio</h2>
                   <div class="image">
-                     <img src="./images/Слой 8.jpg">
+                     <img src="./images/Слой 8.jpg" width="100%">
                   </div>
                   <p class="text">Online fashion store - Homepage</p>
                   <div class="image">
-                     <img src="./images/reebok_web.jpg">
+                     <img src="./images/reebok_web.jpg" width="100%">
                   </div>
                   <p class="text">Reebok Store - Concept</p>
                   <div class="image">
-                     <img src="./images/reebok_web (1).jpg">
+                     <img src="./images/reebok_web (1).jpg" width="100%">
                   </div>
                   <p class="text">Braun Landing Page - Concept</p>
                </div>
@@ -140,28 +146,27 @@
       </section>
    </main>
    <footer>
-      <section class="contacts">
-         <div class="container">
-            <div class="contacts__wrapper">
-               <div class="description">
-                  <h2 class="headline"><a name="Contacts"></a>Contacts</h2>
-                  <p class="text">Want to know more or just chat?<br>You are welcome!</p>
-                  <form action="https://mail.yandex.ru/" method="post" target="_blank">
-                     <button class="button">Send message</button>
-                  </form>
-                  <div class="link">
-                     <a class="link" href="https://ru.linkedin.com/" target="_blank"><img
-                           src="./images/linkedin.jpg"></a>
-                     <a class="link" href="https://www.instagram.com/" target="_blank"><img
-                           src="./images/Insta.jpg"></a>
-                     <a class="link" href="https://web.telegram.org/" target="_blank"><img
-                           src="./images/telegram.jpg"></a>
-                  </div>
-                  <p class="text">Like me on<br>LinkedIn, Instagram, Telegram</p>
+      <div class="container">
+         <div class="contacts__wrapper">
+            <div class="description">
+               <h2 class="headline" id="Contacts">Contacts</h2>
+               <p class="text">Want to know more or just chat?<br>You are welcome!</p>
+               <p></p>
+               </p>
+               <form action="https://mail.yandex.ru/" method="post" target="_blank">
+                  <button class="button">Send message</button>
+               </form>
+               <div class="link">
+                  <a class="link" href="https://ru.linkedin.com/" target="_blank"><img src="./images/linkedin.jpg"></a>
+                  <a class="link" href="https://www.instagram.com/" target="_blank"><img src="./images/Insta.jpg"></a>
+                  <a class="link" href="https://web.telegram.org/" target="_blank"><img
+                        src="./images/telegram2.jpg"></a>
                </div>
+               <p></p>
+               <p class="text">Like me on<br>LinkedIn, Instagram, Telegram</p>
             </div>
          </div>
-      </section>
+      </div>
    </footer>
 </body>
 
